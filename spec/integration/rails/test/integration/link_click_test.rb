@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class LinkClickTest < ActionController::IntegrationTest
+class LinkClickTest < ActionDispatch::IntegrationTest
   test "should click link by text" do
     visit links_path
     click_link "LinkByText"

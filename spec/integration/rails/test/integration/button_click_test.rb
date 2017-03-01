@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ButtonClickTest < ActionController::IntegrationTest
+class ButtonClickTest < ActionDispatch::IntegrationTest
   # <button type="submit" ...>
   test "should click button with type submit by id" do
     visit buttons_path

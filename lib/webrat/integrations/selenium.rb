@@ -1,6 +1,6 @@
 require "webrat/selenium"
 
-if defined?(ActionController::IntegrationTest)
+if defined?(ActionDispatch::IntegrationTest)
   module ActionController #:nodoc:
     IntegrationTest.class_eval do
       include Webrat::Methods

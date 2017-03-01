@@ -1,9 +1,9 @@
 require "webrat/integrations/rails"
-require "action_controller/record_identifier"
+require "action_view/record_identifier"
 
 module Webrat
   class RailsAdapter #:nodoc:
-    include ActionController::RecordIdentifier
+    include ActionView::RecordIdentifier
 
     attr_reader :integration_session
 
