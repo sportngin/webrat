@@ -1,3 +1,9 @@
+== 0.8.0 / 2022-10-04
+
+* Minor enhancements
+
+  * Webrat::RailsAdapter#do_request uses keyword arguments for data and headers to support Rails 5.1+
+
 == 0.7.5 / 2011-11-19
 
 * Minor enhancements
@@ -57,7 +63,7 @@
   * Removed save_and_open_page's rewriting of static asset paths before saving (was not actually working) (Noah Davis)
   * Make "should contain" ignore extra whitespace when doing string comparisons (Noah Davis)
   * Make selenium matchers handle negative match more consistently with positive match (Luke Melia)
-   
+
 == 0.6.0 / 2009-11-28
 
 REMOVED: Support for Hpricot + REXML as an alternative to Nokogiri.

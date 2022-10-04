@@ -47,7 +47,7 @@ module Webrat
 
     def do_request(http_method, url, data, headers) #:nodoc:
       update_protocol(url)
-      integration_session.send(http_method, normalize_url(url), data, headers)
+      integration_session.send(http_method, normalize_url(url), params: data, headers: headers)
     end
 
     # remove protocol, host and anchor

@@ -2,7 +2,7 @@ require "rack"
 require "nokogiri"
 
 module Webrat
-  VERSION = "0.7.3"
+  VERSION = "0.8.0"
 
   autoload :MechanizeAdapter, "webrat/adapters/mechanize"
   autoload :MerbAdapter, "webrat/adapters/merb"
