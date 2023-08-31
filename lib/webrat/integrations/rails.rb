@@ -1,7 +1,7 @@
-require "action_controller"
-require "action_controller/integration"
+require "action_dispatch"
+require "action_dispatch/testing/integration"
 
-module ActionController #:nodoc:
+module ActionDispatch #:nodoc:
   IntegrationTest.class_eval do
     include Webrat::Methods
     include Webrat::Matchers

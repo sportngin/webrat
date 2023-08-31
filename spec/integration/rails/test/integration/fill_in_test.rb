@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class FillInTest < ActionController::IntegrationTest
+class FillInTest < ActionDispatch::IntegrationTest
   test "should fill in text field by name" do
     visit fields_path
     fill_in "field_by_name", :with => "value"

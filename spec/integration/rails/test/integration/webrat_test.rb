@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class WebratTest < ActionController::IntegrationTest
+class WebratTest < ActionDispatch::IntegrationTest
 
   #Firefox raises a security concern under Selenium
   unless ENV['WEBRAT_INTEGRATION_MODE'] == 'selenium'
